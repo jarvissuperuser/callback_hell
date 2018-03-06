@@ -1,0 +1,18 @@
+{
+  "name": "sqlite_con_man",
+  "version": "0.0.1",
+  "description": "a wrapper for sqlite3 ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sqlite3",
+    "database"
+  ],
+  "author": "Timothy Mugadza",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "sqlite3": "^3.1.13"
+  }
+}
