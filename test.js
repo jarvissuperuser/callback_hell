@@ -1,4 +1,4 @@
-var m = require("./app");
+var m = require("./sqlite_con_man");
 
 
 var man =  new m("stores/app.db");
