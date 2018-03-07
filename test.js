@@ -2,13 +2,12 @@ var m = require("./app");
 
 
 var man =  new m("stores/app.db");
-var app = new Promise(function(resolve,reject){
+(man.multiquery(["CREATE TABLE IF NOT EXISTS tst(id integer, newf varchar)"," select datetime('now') as today"]));
 
-	resolve();
-	//resolve (man.multiquery(["CREATE TABLE IF NOT EXISTS tst(id integer, newf varchar)"," select datetime('now') as today"]));
-//setTimeout(function(){
+man.e.on('done',function(){
+	console.log(man.datamulti);
 });
-app.then(function(mn){
-	console.log(man.datamulti,mn);
-});
-//},600);
+/*setTimeout(function(){
+console.log(man.datamulti);
+},400);
+*/
